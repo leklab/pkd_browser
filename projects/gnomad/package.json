@@ -1,0 +1,54 @@
+{
+  "name": "gnomad",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "dist/es/index.js",
+  "author": "Matthew Solomonson <msolomon@broadinstitute.org>",
+  "license": "MIT",
+  "scripts": {
+    "build": "./build.sh",
+    "start": "./start.sh"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@broad/help": "*",
+    "@broad/redux-genes": "*",
+    "@broad/region-viewer": "*",
+    "@broad/track-coverage": "*",
+    "@broad/track-genes": "*",
+    "@broad/track-navigator": "*",
+    "@broad/track-transcript": "*",
+    "@broad/track-variant": "*",
+    "@broad/ui": "*",
+    "@broad/utilities": "*",
+    "@vx/axis": "^0.0.184",
+    "core-js": "^3.0.1",
+    "d3-array": "^3.1.1",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^1.3.5",
+    "whatwg-fetch": "^3.6.2",
+    "igv": "^2.1.0",
+    "lodash.throttle": "^4.1.1",
+    "memoize-one": "^5.0.2",
+    "polished": "^3.2.0",
+    "prop-types": "^15.7.2",
+    "query-string": "5",
+    "react": "^17.0.2",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.2",
+    "react-router-dom": "^5.0.0",
+    "react-sizeme": "^2.5.2",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.1",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "styled-components": "^4.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@broad/track-genes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@broad/region-viewer": "*",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.2",
+    "styled-components": "^4.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@broad/utilities",
+  "main": "src/index.js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ]
+}
