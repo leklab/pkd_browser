@@ -39,8 +39,8 @@ export default () => (
     <DocumentTitle />
     <HeadingContainer>
       {/* <GnomadHeading width="60%" /> */}
-      <img src="http://www.leklab.org/wp-content/uploads/2021/01/pkd_browser_logo.png" width="50%" height="50%"></img>
-      <SubHeading>PKD placeholder</SubHeading>
+      <img src="/PKD_GenomeBrower_Logo.jpg" width="50%" height="50%"></img>
+      <SubHeading>PKD Genome Browser</SubHeading>
       <Searchbox width="100%" />
       <p>
         Examples - Gene:{' '}
@@ -54,8 +54,16 @@ export default () => (
       </p>
     </HeadingContainer>
     <p>
-    Placeholder text
+      The PKD Genome Browser serves as a repository of variants across the exomes and targeted panel sequencing of individuals with polycystic kidney disease (PKD).  
+      Our goal is to aggregate and harmonize exome and genome sequencing data from sequencing projects of PKD and to make summary data available to the 
+      wider scientific community.
     </p>
+
+    <p>
+      The PKD Genome Browser is <b>actively seeking additional cohorts</b> to include in the aggregation efforts. If you want to contribute targeted sequencing, exome or genome 
+      data to the PKD Genome Browser, please contact the <ExternalLink href="mailto:info@pkd-rcc.org">PKD RRC.</ExternalLink>
+    </p>
+
     <br /><br />
   </HomePage>
 )

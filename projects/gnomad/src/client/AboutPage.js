@@ -71,6 +71,46 @@ export default () => (
   <InfoPage>
     <DocumentTitle title="About SFARI" />
     <PageHeading id="about-sfari">About PKD Browser</PageHeading>
-    Placeholder text
+    <p>
+      The PKD Genome Browser was conceived by the PKD Research Resource Consortium and is modeled on the gnomAD database. Our goal is to aggregate and harmonize 
+      exome and genome sequencing data from an array large-scale sequencing projects of individuals with all forms of polycystic kidney disease.   
+      The genome browser provides summary data to the broad scientific community. <br /><br /> 
+
+      The project is overseen by Monkol Lek, Whitney Besse, Stefan Somlo and Terry Watnick.  
+      
+      A list of investigators and groups that have contributed data is available below:
+      <ul>
+      <li>Stefan Somlo</li>
+      <li>Whitney Besse</li>
+      <li>Terry Watnick</li>
+      </ul>
+
+    </p>
+ 
+     <h2>Data Processing</h2>
+     <p>
+      The raw data from contributing cohorts have been reprocessed through equivalent pipelines, and jointly variant-called to increase consistency across cohorts. 
+      The processing pipelines were written in the WDL workflow definition language and executed using the Cromwell execution engine, open-source projects for 
+      defining and executing genomic workflows at massive scale on multiple platforms. The PKD Genome Browser data set contains individuals sequenced using multiple 
+      exome and targeted capture methods and sequencing chemistries. The resulting joint called vcf was QCed and analyzed using the Hail open-source framework 
+      for scalable genetic analysis. 
+    </p>
+ 
+    <h2>External data</h2>
+     <p>
+      The gene and variant page for PKD1 and PKD2 contains data obtained from Mayo PKD Variant Database. Currently the link is to the API for the variant.
+      This link will be updated once a variant specific URL link can be generated to the Mayo database. 
+    </p>
+ 
+
+    <p>
+      <h2>Development Team</h2>
+      The <ExternalLink href="https://github.com/leklab/pkd_browser">PKD Browser code</ExternalLink> is based on the <ExternalLink href="https://github.com/broadinstitute/gnomad-browser">gnomAD Browser</ExternalLink> and developed by Monkol Lek (Yale University).
+    </p>
+
+    <p>
+      <h2>Funding</h2>
+      The PKD Genome Browser is funded by the National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK). Grants: U24DK126110 and U54 DK126114.  
+    </p>
   </InfoPage>
 )
