@@ -83,7 +83,8 @@ const fetchVariantsByGene = async (ctx, geneId, canonicalTranscriptId, subset) =
   }))
 
   const hits = await fetchAllSearchResults(ctx.database.elastic, { 
-      index: 'bpkd_exomes',
+      //index: 'bpkd_exomes',
+      index: 'pkd_exomes',
       size: 10000,
       _source: [
         'AC_adj',

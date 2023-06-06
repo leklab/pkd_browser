@@ -152,7 +152,7 @@ export const GnomadVariantOccurrenceTable = ({ variant }) => {
       <tbody>
         <tr>
           <td />
-          <th scope="col">Baltimore Exomes</th>
+          <th scope="col">Exomes</th>
           <th scope="col">Total</th>
         </tr>
         <tr>

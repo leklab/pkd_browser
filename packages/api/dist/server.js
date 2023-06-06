@@ -2617,7 +2617,8 @@ const fetchVariantData = async (ctx, variantId) => {
 
   const exomeData = await ctx.database.elastic.search({
   //await ctx.database.elastic.search({
-    index: 'bpkd_exomes',
+    //index: 'bpkd_exomes',
+    index: 'pkd_exomes',
     _source: [
 //      requestSubset,
 //      'ab_hist_alt',
@@ -2835,7 +2836,8 @@ const fetchColocatedVariants = async (ctx, variantId) => {
 
   const exomeResponse = await ctx.database.elastic.search({
   //await ctx.database.elastic.search({
-    index: 'bpkd_exomes',
+    //index: 'bpkd_exomes',
+    index: 'pkd_exomes',
     //type: 'variant',
     _source: ['variant_id'],
     body: {
@@ -3510,7 +3512,8 @@ const fetchVariantsByGene = async (ctx, geneId, canonicalTranscriptId, subset) =
   }))
 
   const hits = await (0,_utilities_elasticsearch__WEBPACK_IMPORTED_MODULE_0__.fetchAllSearchResults)(ctx.database.elastic, { 
-      index: 'bpkd_exomes',
+      //index: 'bpkd_exomes',
+      index: 'pkd_exomes',
       size: 10000,
       _source: [
         'AC_adj',
@@ -4546,7 +4549,8 @@ const shapeGnomadVariantSummary = (context) => {
       ac_gnomad: 0,
       an_gnomad: 0,
 
-      bpkd_exome: esHit._index === 'bpkd_exomes' ? data_block : null,
+      //bpkd_exome: esHit._index === 'bpkd_exomes' ? data_block : null,
+      bpkd_exome: esHit._index === 'pkd_exomes' ? data_block : null,
 
       //spark_genome: esHit._index === 'spark_genomes' ? data_block : null,
       //spark_exome: esHit._index === 'spark_exomes' ? data_block : null,

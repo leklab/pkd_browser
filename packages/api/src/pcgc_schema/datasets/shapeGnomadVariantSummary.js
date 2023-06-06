@@ -131,7 +131,8 @@ const shapeGnomadVariantSummary = (context) => {
       ac_gnomad: 0,
       an_gnomad: 0,
 
-      bpkd_exome: esHit._index === 'bpkd_exomes' ? data_block : null,
+      //bpkd_exome: esHit._index === 'bpkd_exomes' ? data_block : null,
+      bpkd_exome: esHit._index === 'pkd_exomes' ? data_block : null,
 
       //spark_genome: esHit._index === 'spark_genomes' ? data_block : null,
       //spark_exome: esHit._index === 'spark_exomes' ? data_block : null,

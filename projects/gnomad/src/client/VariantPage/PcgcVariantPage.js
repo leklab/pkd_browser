@@ -249,6 +249,11 @@ const PcgcVariantPage = ({ datasetId, variantId }) => (
               <GnomadGenotypeQualityMetrics variant={variant} />
             </ResponsiveSection>
             )}
+
+           <br /><br />
+            Appropriate Data Usage: The database should be used for research purposes only. The data is not intended to be used for the provision of clinical care. 
+            <br /><br />
+
             {/*<ResponsiveSection>
               <h2>Site Quality Metrics</h2>
               <GnomadSiteQualityMetrics datasetId={datasetId} variant={variant} />
@@ -267,12 +272,11 @@ const PcgcVariantPage = ({ datasetId, variantId }) => (
             <h2>Read Data</h2>
             <MitoReadData variantIds={[variantId]} />
           </Section>*/}
-
           </VariantDetailsContainer>
         )
       }}
     </VariantDetailsQuery>
-    <br /><br />
+
   </Page>
 )
 

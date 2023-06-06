@@ -154,7 +154,8 @@ const fetchVariantData = async (ctx, variantId) => {
 
   const exomeData = await ctx.database.elastic.search({
   //await ctx.database.elastic.search({
-    index: 'bpkd_exomes',
+    //index: 'bpkd_exomes',
+    index: 'pkd_exomes',
     _source: [
 //      requestSubset,
 //      'ab_hist_alt',
@@ -372,7 +373,8 @@ const fetchColocatedVariants = async (ctx, variantId) => {
 
   const exomeResponse = await ctx.database.elastic.search({
   //await ctx.database.elastic.search({
-    index: 'bpkd_exomes',
+    //index: 'bpkd_exomes',
+    index: 'pkd_exomes',
     //type: 'variant',
     _source: ['variant_id'],
     body: {

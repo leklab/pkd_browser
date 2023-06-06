@@ -246,7 +246,12 @@ class VariantsInGene extends Component {
             sortOrder={sortOrder}
             variants={renderedVariants}
           />
+        <br /><br />
+        Appropriate Data Usage: The database should be used for research purposes only. The data is not intended to be used for the provision of clinical care. 
+        <br /><br />        
+
         </TrackPageSection>
+
       </div>
     )
   }
