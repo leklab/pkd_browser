@@ -742,22 +742,22 @@ const fetchVariantDetails = async (ctx, variantId) => {
             
             alleleBalance: {
               //alt: formatHistogram(exomeData.ab_hist_alt),
-              alt: exomeData.allele_balance.alt_raw,
+              alt: exomeData.allele_balance.alt_adj,
             },
             
             genotypeDepth: {
               //all: formatHistogram(exomeData.genotype_depth.all_raw),
               //alt: formatHistogram(exomeData.genotype_depth.alt_raw),
-              all: exomeData.genotype_depth.all_raw,
-              alt: exomeData.genotype_depth.alt_raw,
+              all: exomeData.genotype_depth.all_adj,
+              alt: exomeData.genotype_depth.alt_adj,
 
             },            
             genotypeQuality: {
               //all: formatHistogram(exomeData.gq_hist_all),
               //alt: formatHistogram(exomeData.gq_hist_alt),
 
-              all: exomeData.genotype_quality.all_raw,
-              alt: exomeData.genotype_quality.alt_raw,
+              all: exomeData.genotype_quality.all_adj,
+              alt: exomeData.genotype_quality.alt_adj,
 
             },
 

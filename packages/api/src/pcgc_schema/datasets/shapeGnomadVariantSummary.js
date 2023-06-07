@@ -89,10 +89,15 @@ const shapeGnomadVariantSummary = (context) => {
     //console.log(variantData.AN_adj['eur'])
     const data_block = {
       
-      ac: variantData.AC_raw,
-      ac_hom: variantData.nhomalt_raw,
-      an: variantData.AN_raw,
-      af: variantData.AF_raw,        
+      //ac: variantData.AC_raw,
+      //ac_hom: variantData.nhomalt_raw,
+      //an: variantData.AN_raw,
+      //af: variantData.AF_raw,        
+
+      ac: variantData.AC,
+      ac_hom: variantData.nhomalt,
+      an: variantData.AN,
+      af: variantData.AF,        
       
       ac_proband: variantData.AC_proband,
       an_proband: variantData.AN_proband,

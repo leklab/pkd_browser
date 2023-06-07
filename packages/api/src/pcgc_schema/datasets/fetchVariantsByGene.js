@@ -138,7 +138,9 @@ const fetchVariantsByGene = async (ctx, geneId, canonicalTranscriptId, subset) =
                 },
               },
               { bool: { should: rangeQueries } },
-              { range: { ['AC_raw']: { gt: 0 } } },
+              //{ range: { ['AC_raw']: { gt: 0 } } },
+              { range: { ['AC']: { gt: 0 } } },
+ 
             ],
           },
         },

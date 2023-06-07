@@ -3205,22 +3205,22 @@ const fetchVariantDetails = async (ctx, variantId) => {
             
             alleleBalance: {
               //alt: formatHistogram(exomeData.ab_hist_alt),
-              alt: exomeData.allele_balance.alt_raw,
+              alt: exomeData.allele_balance.alt_adj,
             },
             
             genotypeDepth: {
               //all: formatHistogram(exomeData.genotype_depth.all_raw),
               //alt: formatHistogram(exomeData.genotype_depth.alt_raw),
-              all: exomeData.genotype_depth.all_raw,
-              alt: exomeData.genotype_depth.alt_raw,
+              all: exomeData.genotype_depth.all_adj,
+              alt: exomeData.genotype_depth.alt_adj,
 
             },            
             genotypeQuality: {
               //all: formatHistogram(exomeData.gq_hist_all),
               //alt: formatHistogram(exomeData.gq_hist_alt),
 
-              all: exomeData.genotype_quality.all_raw,
-              alt: exomeData.genotype_quality.alt_raw,
+              all: exomeData.genotype_quality.all_adj,
+              alt: exomeData.genotype_quality.alt_adj,
 
             },
 
@@ -3567,7 +3567,9 @@ const fetchVariantsByGene = async (ctx, geneId, canonicalTranscriptId, subset) =
                 },
               },
               { bool: { should: rangeQueries } },
-              { range: { ['AC_raw']: { gt: 0 } } },
+              //{ range: { ['AC_raw']: { gt: 0 } } },
+              { range: { ['AC']: { gt: 0 } } },
+ 
             ],
           },
         },
@@ -4507,10 +4509,15 @@ const shapeGnomadVariantSummary = (context) => {
     //console.log(variantData.AN_adj['eur'])
     const data_block = {
       
-      ac: variantData.AC_raw,
-      ac_hom: variantData.nhomalt_raw,
-      an: variantData.AN_raw,
-      af: variantData.AF_raw,        
+      //ac: variantData.AC_raw,
+      //ac_hom: variantData.nhomalt_raw,
+      //an: variantData.AN_raw,
+      //af: variantData.AF_raw,        
+
+      ac: variantData.AC,
+      ac_hom: variantData.nhomalt,
+      an: variantData.AN,
+      af: variantData.AF,        
       
       ac_proband: variantData.AC_proband,
       an_proband: variantData.AN_proband,
