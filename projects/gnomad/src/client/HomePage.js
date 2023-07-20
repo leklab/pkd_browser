@@ -63,6 +63,11 @@ export default () => (
       The PKD Genome Browser is <b>actively seeking additional cohorts</b> to include in the aggregation efforts. If you want to contribute targeted sequencing, exome or genome 
       data to the PKD Genome Browser, please contact the <ExternalLink href="mailto:info@pkd-rcc.org">PKD RRC.</ExternalLink>
     </p>
+    <p>
+      <b>Appropriate Data Usage:</b> The database is meant to be used for research purposes only. 
+      The database contains all variants found in the sequenced population of individuals with polycystic kidney disease. 
+      The presence of a variant in this population does not indicate that it is pathogenic. The data is not intended to be used for the provision of clinical care.
+    </p>
 
     <br /><br />
   </HomePage>

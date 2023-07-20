@@ -251,7 +251,9 @@ const PcgcVariantPage = ({ datasetId, variantId }) => (
             )}
 
            <br /><br />
-            Appropriate Data Usage: The database should be used for research purposes only. The data is not intended to be used for the provision of clinical care. 
+            <b>Appropriate Data Usage:</b> The database is meant to be used for research purposes only. 
+            The database contains all variants found in the sequenced population of individuals with polycystic kidney disease. 
+            The presence of a variant in this population does not indicate that it is pathogenic. The data is not intended to be used for the provision of clinical care.
             <br /><br />
 
             {/*<ResponsiveSection>

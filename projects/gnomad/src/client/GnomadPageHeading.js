@@ -51,13 +51,13 @@ const Label = styled.span`
 const GnomadPageHeading = ({ children, datasetOptions, selectedDataset }) => (
   <PageHeadingWrapper>
     <PageHeadingText>{children}</PageHeadingText>
-    <PageControlsWrapper>
+    {/*<PageControlsWrapper>
       <Label>Dataset</Label>
       <DatasetSelector datasetOptions={datasetOptions} selectedDataset={selectedDataset} />
       <span>
         <QuestionMark topic="dataset-selection" />
       </span>
-    </PageControlsWrapper>
+    </PageControlsWrapper>*/}
   </PageHeadingWrapper>
 )
 
