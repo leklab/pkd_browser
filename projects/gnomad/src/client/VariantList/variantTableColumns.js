@@ -192,30 +192,30 @@ export const getColumns = ({ width, includeHomozygoteAC, includeHemizygoteAC }) 
           .filter(flag => flag !== 'nc_transcript')
           .map(flag => <VariantFlag key={flag} type={flag} />),
     },
-    {
+    /*{
       key: 'ac_proband',
       heading: width < 600 ? 'PC' : 'Affected Allele Count',
       grow: 0,
       isSortable: true,
       minWidth: width < 600 ? 75 : 80,
-    },
+    },*/
     {
       key: 'ac',
-      heading: width < 600 ? 'AC' : 'Total Allele Count',
+      heading: width < 600 ? 'AC' : 'PKD Allele Count',
       grow: 0,
       isSortable: true,
       minWidth: width < 600 ? 75 : 80,
     },
     {
       key: 'an',
-      heading: width < 600 ? 'AN' : 'Total Allele Number',
+      heading: width < 600 ? 'AN' : 'PKD Allele Number',
       grow: 0,
       isSortable: true,
       minWidth: width < 600 ? 75 : 80,
     },
     {
       key: 'af',
-      heading: width < 600 ? 'AF' : 'Allele Frequency',
+      heading: width < 600 ? 'AF' : 'PKD Allele Frequency',
       grow: 0,
       isSortable: true,
       minWidth: width < 600 ? 75 : 80,
